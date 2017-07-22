@@ -6,7 +6,7 @@ package com.javareview.common.Thread;
 public class SleepMoeth {
     public static void main(String args[]){
         Thread thread=new MyThreadSleep();
-        for (int i=0;i<100;i++){
+        for (int i=0;i <100;i++){
             System.out.println(Thread.currentThread().getName()+"----"+i);
             if (i==30){
                 thread.start();
