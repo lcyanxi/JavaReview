@@ -6145,6 +6145,52 @@
 									"nameLabel": {
 										"$ref": "AAAAAAFdaUFXDPRqN1I="
 									}
+								},
+								{
+									"_type": "UMLNoteView",
+									"_id": "AAAAAAFdajSu4m+2hxU=",
+									"_parent": {
+										"$ref": "AAAAAAFdaTDCFvOLTvM="
+									},
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 176,
+									"top": 88,
+									"width": 176,
+									"height": 51,
+									"autoResize": false,
+									"text": "join （）让一个线程等待另  一个线程执行完才继续执行",
+									"wordWrap": true
+								},
+								{
+									"_type": "UMLNoteView",
+									"_id": "AAAAAAFdaj/QMW+/WbI=",
+									"_parent": {
+										"$ref": "AAAAAAFdaTDCFvOLTvM="
+									},
+									"visible": true,
+									"enabled": true,
+									"lineColor": "#000000",
+									"fillColor": "#ffffff",
+									"fontColor": "#000000",
+									"font": "Arial;13;0",
+									"showShadow": true,
+									"containerChangeable": false,
+									"containerExtending": false,
+									"left": 584,
+									"top": 176,
+									"width": 207.078125,
+									"height": 51,
+									"autoResize": false,
+									"text": "sleep（）让当前正在执行的线程  暂停指定的时间 并进入阻塞状态",
+									"wordWrap": true
 								}
 							]
 						},
