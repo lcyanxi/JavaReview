@@ -6,7 +6,7 @@ package com.javareview.common.Thread;
 public class JoinMoeth {
     /**
      * join —— 一个线程等待另一个线程完成才继续执行。
-     * 如A线程线程执行体中调用B线程的join()方法，则A线程被阻塞，知道B线程执行完为止，A才能得以继续执行。
+     * 如A线程线程执行体中调用B线程的join()方法，则A线程被阻塞，直到B线程执行完为止，A才能得以继续执行。
      */
     public static void main(String args[]){
         Runnable runnable=new MyRunnableJoin();

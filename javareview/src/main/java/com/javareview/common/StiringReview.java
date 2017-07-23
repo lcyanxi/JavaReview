@@ -8,6 +8,9 @@ public class StiringReview {
     //从效率和安全角度来考虑
     //效率 StringBuilder > StringBuffer > String
     //安全 StringBuffer为synchronized线性安全  维持同步锁  StringBudilder单线程用得多
+
+
+
     public static void main(String args []){
         long time=System.currentTimeMillis();
         String str=null;

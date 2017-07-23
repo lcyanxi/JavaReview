@@ -1,6 +1,7 @@
 package com.javareview.common;
 
 import java.util.List;
+import java.util.Vector;
 
 /**
  * Created by lcyanxi on 2017/7/18.
@@ -10,7 +11,7 @@ public class ListReview {
     //对于读取数据ArrayList优于LinkdeList,因为LinkdeList要移动指针
     //对于添加和删除数据LinkdeList要优于ArrayList, 因为后者要移动数据
     static final int N = 10000000;
-
+     List  list=new Vector();
     public static long timeList(List list) {
         long startTime = System.currentTimeMillis();
         Object object = new Object();
@@ -36,5 +37,6 @@ public class ListReview {
         }
         return list;
     }
+
 
 }

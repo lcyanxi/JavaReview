@@ -9,6 +9,11 @@ public class AccountTreadTest {
      * wait()方法执行后，当前线程立即进入到等待阻塞状态，其后面的代码不会执行
      * notify()/notifyAll()方法执行后，将唤醒此同步锁对象上的线程对象
      * 当wait线程唤醒后并执行时，是接着上次执行到的wait()方法代码后面继续往下执行的
+     *
+     * 避免多线程环境下对此共享资源的并发访问:
+     * Lock对象同步锁
+     * 同步代码块
+     * 同步方法  方法定义中加上synchronized关键字修饰
      */
     public  static void main(String args[]){
         Account account=new Account("111111",0);
@@ -19,9 +24,8 @@ public class AccountTreadTest {
         thread.start();
         thread1.start();
 
-             try {
-             thread.join();
-            thread1.join();
+        try {
+            thread.join();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
