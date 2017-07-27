@@ -1,5 +1,7 @@
 package com.javareview.common.Thread;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
@@ -41,11 +43,14 @@ public class CallableTest {
 }
 
 class MyCallable implements Callable<Integer> {
+    List list=new ArrayList();
     int sum = 0;
 
     public Integer call() throws Exception {
+        list.add("aaaa");
         for (int i = 0; i < 100; i++) {
             System.out.println(Thread.currentThread().getName() + "" + i);
+
 
             sum += i;
         }

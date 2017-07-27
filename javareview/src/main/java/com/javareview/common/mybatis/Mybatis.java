@@ -18,4 +18,15 @@ public class Mybatis {
      *
      *  大多数情况下使用#  一般特别的情况使用$
      */
+
+    public static void main(String as[]) {
+        String s1 = "a";
+        String s2 = s1 + "b";
+        String s3 = "a" + "b";
+        System.out.println(s2.equals("ab"));
+        System.out.println(s2 == "ab");
+        System.out.println(s3 == "ab");
+
+    }
+
 }
